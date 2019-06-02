@@ -1,0 +1,165 @@
+.taaleng{
+  background-color: rgb(90, 66, 54);
+  color: rgb(255, 250, 208);
+  position: fixed;
+  right: 0rem;
+  top: 0rem;
+  color: rgb(255, 250, 208);
+  padding: 0.7rem;
+}
+
+.taalnl{
+  background-color: rgb(90, 66, 54);
+  position: fixed;
+  right: 2.7rem;
+  top: 0rem;
+  color: rgb(255, 250, 208);
+  padding: 0.7rem;
+}
+
+.blok1 video{
+  width: 100%;
+  height: 100%;
+}
+
+.blok2{
+  width: 100vw;
+  min-height: 35vh;
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.fotoik{
+  height: 100%;
+  width: 100%;
+  background-image: url("afbeeldingen/fotoik.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.infoik{
+  background-color: rgb(90, 66, 54);
+  padding: 2rem;
+}
+
+h1{
+  font-family: Attraction Personal Use;
+  color: rgb(255, 250, 208);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+p{
+  font-family: garamond;
+  color: rgb(255, 250, 208);
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.blok3{
+  width: 100vw;
+  min-height: 35vh;
+  background-color: rgb(159, 68, 41);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  text-align: center;
+  font-family: Attraction Personal Use;
+  color: rgb(255, 250, 208);
+  font-size: 1.5rem;
+}
+
+.ALL{
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.FOTO{
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.GD{
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.IT{
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.klik{
+  grid-column: 1/3;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+.grid{
+  column-count: 1;
+  background-color: rgb(90, 66, 54);
+  padding-top: 2rem;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  margin-top: 1rem;
+}
+
+.nietaf{
+  text-align: center;
+  font-family: Attraction Personal Use;
+  color: rgb(255, 250, 208);
+  margin-bottom: 5rem;
+}
+
+.verborgen{
+  display: none;
+}
+
+@supports (grid-area: auto) {
+
+  @media (min-width: 300px) {
+  .blok2{
+    grid-template-columns:1.5fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  @media (min-width: 500px) {
+  .blok2{
+    width: 100vw;
+    height: 100vh;
+  }
+  .grid{
+    column-count: 2;
+  }
+
+  @media (min-width: 580px) {
+    h1{
+      font-size: 1.5rem;
+    }
+    p{
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .grid{
+      column-count: 3;
+    }
+    .blok1{
+      width: 100vw;
+      height: 100vh;
+    }
+    p{
+      font-size: 1.5rem;
+    }
+  }
+}
